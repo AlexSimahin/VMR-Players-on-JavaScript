@@ -60,4 +60,9 @@ export const radioPlayerInit = () => {
         changeIconRadioPlay();
     });
 
+    radioPlayerInit.stop = () => {
+        audio.pause();
+        changeIconRadioPlay();
+    };
+
 }

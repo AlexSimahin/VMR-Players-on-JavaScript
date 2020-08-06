@@ -66,6 +66,10 @@ export const videoPlayerInit = () => {
         videoPlayer.currentTime = (value * duration) / 100;
     });
 
-
+    videoPlayerInit.stop = () => {
+        if (!videoPlayer.paused) {
+            stopPlay();
+        }
+    };
 
 }
